@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">CarePlus Clinic</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="health-tips.html">Health Tips</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h1>Health Tips</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h2>💧</h2>
+            <h3>Drink Water</h3>
+            <p>Drink water regularly to stay hydrated.</p>
+        </div>
+
+        <div class="card">
+            <h2>🥗</h2>
+            <h3>Healthy Food</h3>
+            <p>Eat fruits and vegetables daily.</p>
+        </div>
+
+        <div class="card">
+            <h2>🏃</h2>
+            <h3>Exercise</h3>
+            <p>Exercise regularly to stay active.</p>
+        </div>
+
+        <div class="card">
+            <h2>😴</h2>
+            <h3>Proper Sleep</h3>
+            <p>Maintain a regular sleep schedule.</p>
+        </div>
+    </div>
+
+    <h2>BMI Calculator</h2>
+
+    <form id="bmiForm">
+        <label>Height (cm)</label>
+        <input type="number" id="height" required>
+
+        <label>Weight (kg)</label>
+        <input type="number" id="weight" required>
+
+        <button type="submit" class="btn">
+            Calculate BMI
+        </button>
+
+        <p id="bmiResult"></p>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 CarePlus Clinic</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

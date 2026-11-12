@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">CarePlus Clinic</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="health-tips.html">Health Tips</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h1>Book an Appointment</h1>
+
+    <form id="appointmentForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" maxlength="10" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Select Department</label>
+        <select id="department" required>
+            <option value="">Choose Department</option>
+            <option>Cardiology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+            <option>Dermatology</option>
+            <option>Gynecology</option>
+            <option>General Medicine</option>
+        </select>
+
+        <label>Appointment Date</label>
+        <input type="date" id="appointmentDate" required>
+
+        <label>Preferred Time</label>
+        <select required>
+            <option value="">Choose Time</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>2:00 PM</option>
+            <option>4:00 PM</option>
+        </select>
+
+        <label>Reason for Visit</label>
+        <textarea placeholder="Enter your reason"></textarea>
+
+        <button type="submit" class="btn">Submit Appointment</button>
+
+        <p id="appointmentMessage"></p>
+
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 CarePlus Clinic</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
